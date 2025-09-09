@@ -1,0 +1,84 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="qGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="8"/>
+  
+  <!-- 量子粒子效果 -->
+  <circle cx="180" cy="180" r="4" fill="#ffffff" opacity="0.8" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="340" cy="160" r="3" fill="#ffffff" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="160" cy="340" r="3" fill="#ffffff" opacity="0.7" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="360" cy="360" r="4" fill="#ffffff" opacity="0.5" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 主要Q字母 -->
+  <g transform="translate(256, 256)">
+    <!-- Q字母主体 -->
+    <path d="M -60 -40 Q -60 -80 -20 -80 Q 20 -80 20 -40 Q 20 0 20 40 Q 20 80 -20 80 Q -60 80 -60 40 Q -60 0 -60 -40 Z" 
+          fill="url(#qGradient)" 
+          stroke="#ffffff" 
+          stroke-width="4"/>
+    
+    <!-- Q字母尾巴 -->
+    <path d="M 20 20 L 50 50 L 40 60 L 10 30 Z" 
+          fill="url(#qGradient)" 
+          stroke="#ffffff" 
+          stroke-width="4"/>
+    
+    <!-- 内部装饰线条 -->
+    <path d="M -40 -20 Q -40 -40 -20 -40 Q 0 -40 0 -20 Q 0 0 0 20 Q 0 40 -20 40 Q -40 40 -40 20 Q -40 0 -40 -20 Z" 
+          fill="none" 
+          stroke="#7c3aed" 
+          stroke-width="2" 
+          opacity="0.6"/>
+  </g>
+  
+  <!-- 连接线效果 -->
+  <path d="M 180 180 Q 256 200 340 160" 
+        stroke="#ffffff" 
+        stroke-width="1" 
+        fill="none" 
+        opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 160 340 Q 256 320 360 360" 
+        stroke="#ffffff" 
+        stroke-width="1" 
+        fill="none" 
+        opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="2.8s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- 底部文字 -->
+  <text x="256" y="420" 
+        font-family="Arial, sans-serif" 
+        font-size="24" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="#ffffff" 
+        opacity="0.9">Q</text>
+</svg>

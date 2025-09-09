@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>创合矩阵 - 临时团队组建平台 | Quantum Echo</title>
+    <meta name="description" content="创合矩阵是专业的临时团队组建平台，专注于影视制作、音乐创作、设计创意等领域。量子共振，质效跃升，让创意与效率完美结合。" />
+    <meta name="keywords" content="创合矩阵,临时团队,人才招募,影视制作,音乐创作,设计创意,项目合作,Quantum Echo" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="创合矩阵 - 临时团队组建平台" />
+    <meta property="og:description" content="量子共振，质效跃升 - 专业的临时团队组建平台，专注于影视制作、音乐创作、设计创意等领域" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chuanghejuzhen.com" />
+    <meta property="og:image" content="https://chuanghejuzhen.com/icons/icon-512x512.png" />
+    <meta property="og:site_name" content="创合矩阵" />
+    <meta property="og:locale" content="zh_CN" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="创合矩阵 - 临时团队组建平台" />
+    <meta name="twitter:description" content="量子共振，质效跃升 - 专业的临时团队组建平台" />
+    <meta name="twitter:image" content="https://chuanghejuzhen.com/icons/icon-512x512.png" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#7c3aed" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="创合矩阵" />
+    <meta name="msapplication-TileColor" content="#7c3aed" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Icons -->
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
