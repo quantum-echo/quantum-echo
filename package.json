@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "quantum-echo",
   "version": "1.0.0",
   "description": "创合矩阵 - 临时团队组建平台",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -26,18 +26,6 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
-  },
-  "keywords": [
-    "talent",
-    "team",
-    "collaboration",
-    "creative",
-    "film",
-    "music",
-    "design"
-  ],
-  "author": "Quantum Echo Team",
-  "license": "MIT"
+    "typescript": "^5.0.2"
+  }
 }
