@@ -1,7 +1,7 @@
 ﻿{
   "name": "quantum-echo",
   "version": "1.0.0",
-  "description": "创合矩阵 - 临时团队组建平台",
+  "description": "Quantum Echo - Temporary Team Platform",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
